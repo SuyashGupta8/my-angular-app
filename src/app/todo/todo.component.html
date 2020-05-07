@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor = 'let td of tableData'>
+      <td>{{td.fName}}</td>
+      <td>{{td.lName}}</td>
+      <td>{{td.age}}</td>
+      <td>{{td.tdate | date | lowercase | uppercase}}</td>
+    </tr>
+  </table>
+</div>
